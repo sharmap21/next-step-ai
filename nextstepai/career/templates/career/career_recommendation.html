@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Recommendations</title>
+    <link rel="stylesheet" href="{% static 'career/css/style2.css' %}">
+</head>
+<body>
+    <div class='main-container'>
+    <h2>Find Your Ideal Career Path</h2>
+
+    <form id="career-form" method="post" onsubmit="return validateForm()">
+        {% csrf_token %}
+
+        <!-- Skills Input -->
+        <label for="skill-input">Enter Your Skills:</label>
+        <input type="text" id="skill-input" placeholder="Type a skill and press Enter">
+        <div id="skill-list"></div> <!-- Display added skills -->
+        <input type="hidden" name="skills" id="hidden-skills">
+        <p class="error-message" id="skills-error" style="display: none;">Please enter at least one skill.</p>
+
+        <!-- Education Selection -->
+        <label for="education">Select Your Education:</label>
+        <select name="education" id="education" required>
+            <option value="" selected hidden>-- Select Education --</option>
+            <option value="High School">High School</option>
+            <option value="Bachelor's">Bachelor's</option>
+            <option value="Master's">Master's</option>
+            <option value="PhD">PhD</option>
+        </select>
+
+        <!-- Field of Study Input -->
+        <label for="field-of-study">Enter Your Field of Study:</label>
+        <input type="text" name="field_of_study" id="field-of-study" placeholder="e.g., Computer Science, Business" required>
+        <p class="error-message" id="field-error" style="display: none;">Please enter your field of study.</p>
+
+        <!-- Submit Button -->
+        <button type="submit" id="get-recommendations">Get Recommendations</button>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillInput = document.getElementById("skill-input");
+            const skillList = document.getElementById("skill-list");
+            const hiddenSkills = document.getElementById("hidden-skills");
+            let skills = [];
+
+            skillInput.addEventListener("keypress", function (event) {
+                if (event.key === "Enter" && skillInput.value.trim() !== "") {
+                    event.preventDefault();
+                    const skill = skillInput.value.trim();
+                    if (!skills.includes(skill)) {
+                        skills.push(skill);
+                        updateSkillList();
+                    }
+                    skillInput.value = "";
+                }
+            });
+
+            function updateSkillList() {
+                skillList.innerHTML = "";
+                skills.forEach(skill => {
+                    const skillTag = document.createElement("span");
+                    skillTag.classList.add("skill-tag");
+                    skillTag.innerText = skill;
+                    
+                    const removeBtn = document.createElement("button");
+                    removeBtn.innerText = "x";
+                    removeBtn.onclick = function () {
+                        skills = skills.filter(s => s !== skill);
+                        updateSkillList();
+                    };
+
+                    skillTag.appendChild(removeBtn);
+                    skillList.appendChild(skillTag);
+                });
+
+                hiddenSkills.value = skills.join(",");
+            }
+        });
+
+        function validateForm() {
+            let isValid = true;
+
+            // Validate Skills
+            const skillsValue = document.getElementById("hidden-skills").value;
+            const skillsError = document.getElementById("skills-error");
+            if (!skillsValue.trim()) {
+                skillsError.style.display = "block";
+                isValid = false;
+            } else {
+                skillsError.style.display = "none";
+            }
+
+            // Validate Field of Study
+            const fieldOfStudyValue = document.getElementById("field-of-study").value.trim();
+            const fieldError = document.getElementById("field-error");
+            if (!fieldOfStudyValue) {
+                fieldError.style.display = "block";
+                isValid = false;
+            } else {
+                fieldError.style.display = "none";
+            }
+
+            return isValid;
+        }
+    </script>
+</div>
+</body>
+</html>

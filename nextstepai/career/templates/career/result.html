@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Recommendations</title>
+    <link rel='stylesheet' href='{% static "career/css/style3.css" %}'/>
+</head>
+<body>
+
+    <h2>Career Recommendations</h2>
+
+    {% if recommendations %}
+        <ul class="items">
+            {% for career in recommendations %}
+                <li>
+                    <h3>{{ career.0.career }}</h3>
+                    <p><strong>Skills Required:</strong> {{ career.0.skills|join:", " }}</p>
+                    <p><strong>Education:</strong> {{ career.0.education|join:", " }}</p>
+                    <p><strong>Salary Range:</strong> {{ career.0.salary_range }}</p>
+                    <p><strong>Growth:</strong> {{ career.0.growth }}</p>
+
+                    <!-- ✅ New Section: Learning Resources -->
+                    <p><strong>Learning Resources:</strong></p>
+                    <ul>
+                        {% for resource in career.0.learning_resources %}
+                            <li><a href="{{ resource }}" target="_blank">{{ resource }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No recommendations found. Please refine your inputs.</p>
+    {% endif %}
+
+    <div class="navigate">
+        <a class="back-link" href="">Back</a>
+    </div>
+
+</body>
+</html>

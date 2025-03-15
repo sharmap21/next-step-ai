@@ -1,0 +1,157 @@
+[
+    {
+      "career": "Full Stack Python Developer",
+      "skills": ["Python", "Django", "Flask", "JavaScript", "HTML", "CSS", "SQL", "React", "Vue", "Angular"],
+      "education": ["Bachelor's", "Master's"],
+      "salary_range": "$70,000 - $130,000",
+      "growth": "High Demand",
+      "learning_resources": [
+        "https://fullstackopen.com/",
+        "https://www.udemy.com/course/python-django-web-development/"
+      ]
+    },
+    {
+      "career": "Full Stack Java Developer",
+      "skills": ["Java", "Spring Boot", "Hibernate", "JavaScript", "React", "Angular", "HTML", "CSS"],
+      "education": ["Bachelor's", "Master's"],
+      "salary_range": "$75,000 - $140,000",
+      "growth": "Growing Demand",
+      "learning_resources": [
+        "https://www.udemy.com/course/java-the-complete-java-developer-course/",
+        "https://spring.io/guides"
+      ]
+    },
+    {
+      "career": "Data Scientist",
+      "skills": ["Python", "R", "SQL", "Machine Learning", "Deep Learning", "Statistics", "Data Visualization"],
+      "education": ["Master's", "Ph.D."],
+      "salary_range": "$90,000 - $160,000",
+      "growth": "High Demand",
+      "learning_resources": [
+        "https://www.coursera.org/learn/machine-learning",
+        "https://www.kaggle.com/learn"
+      ]
+    },
+    {
+      "career": "Artificial Intelligence Engineer",
+      "skills": ["Python", "TensorFlow", "PyTorch", "NLP", "Computer Vision", "Deep Learning"],
+      "education": ["Master's", "Ph.D."],
+      "salary_range": "$100,000 - $180,000",
+      "growth": "Very High",
+      "learning_resources": [
+        "https://www.udacity.com/course/ai-artificial-intelligence-nanodegree--nd898",
+        "https://www.coursera.org/specializations/deep-learning"
+      ]
+    },
+    {
+      "career": "Blockchain Developer",
+      "skills": ["Solidity", "Ethereum", "Smart Contracts", "Cryptography", "Node.js"],
+      "education": ["Bachelor's", "Master's"],
+      "salary_range": "$85,000 - $150,000",
+      "growth": "High",
+      "learning_resources": [
+        "https://www.udemy.com/course/blockchain-developer/",
+        "https://ethereum.org/en/developers/"
+      ]
+    },
+    {
+      "career": "Cyber Security Analyst",
+      "skills": ["Penetration Testing", "Ethical Hacking", "Cryptography", "Networking", "Security Audits"],
+      "education": ["Bachelor's", "Master's"],
+      "salary_range": "$80,000 - $140,000",
+      "growth": "High Demand",
+      "learning_resources": [
+        "https://www.udemy.com/course/the-complete-ethical-hacking-course/",
+        "https://www.coursera.org/specializations/cybersecurity"
+      ]
+    },
+    {
+      "career": "Digital Marketing Specialist",
+      "skills": ["SEO", "Google Ads", "Social Media Marketing", "Content Writing", "Email Marketing"],
+      "education": ["Bachelor's", "Master's"],
+      "salary_range": "$45,000 - $100,000",
+      "growth": "Growing Demand",
+      "learning_resources": [
+        "https://www.udemy.com/course/digital-marketing/",
+        "https://www.coursera.org/specializations/digital-marketing"
+      ]
+    },
+    {
+      "career": "Product Manager",
+      "skills": ["Market Research", "Project Management", "UX Design", "Business Strategy"],
+      "education": ["Bachelor's", "MBA"],
+      "salary_range": "$100,000 - $160,000",
+      "growth": "High Demand",
+      "learning_resources": [
+        "https://www.udemy.com/course/become-a-product-manager/",
+        "https://www.productschool.com/"
+      ]
+    },
+    {
+      "career": "Supply Chain Manager",
+      "skills": ["Logistics", "Operations Management", "SAP", "Procurement"],
+      "education": ["Bachelor's", "Master's"],
+      "salary_range": "$70,000 - $140,000",
+      "growth": "Growing",
+      "learning_resources": [
+        "https://www.coursera.org/specializations/supply-chain-management",
+        "https://www.udemy.com/course/supply-chain-management/"
+      ]
+    },
+    {
+      "career": "Financial Analyst",
+      "skills": ["Financial Modeling", "Excel", "Investment Analysis", "Accounting"],
+      "education": ["Bachelor's", "Master's", "CFA"],
+      "salary_range": "$65,000 - $120,000",
+      "growth": "Stable",
+      "learning_resources": [
+        "https://www.udemy.com/course/financial-modeling/",
+        "https://www.cfainstitute.org/"
+      ]
+    },
+    {
+      "career": "Legal Consultant",
+      "skills": ["Corporate Law", "Intellectual Property", "Contract Law"],
+      "education": ["Bachelor's", "J.D."],
+      "salary_range": "$80,000 - $200,000",
+      "growth": "Stable",
+      "learning_resources": [
+        "https://www.udemy.com/course/legal-writing/",
+        "https://www.law.cornell.edu/"
+      ]
+    },
+    {
+      "career": "Chef",
+      "skills": ["Cooking", "Food Presentation", "Baking", "Menu Planning"],
+      "education": ["High School", "Culinary School"],
+      "salary_range": "$40,000 - $90,000",
+      "growth": "Moderate",
+      "learning_resources": [
+        "https://www.udemy.com/course/essential-cooking-skills/",
+        "https://www.coursera.org/courses?query=cooking"
+      ]
+    },
+    {
+      "career": "Doctor",
+      "skills": ["Medical Diagnosis", "Surgery", "Patient Care"],
+      "education": ["Ph.D.", "Medical School"],
+      "salary_range": "$120,000 - $300,000",
+      "growth": "Very High",
+      "learning_resources": [
+        "https://www.medscape.com/",
+        "https://www.ama-assn.org/"
+      ]
+    },
+    {
+      "career": "Psychologist",
+      "skills": ["Counseling", "Therapy", "Mental Health"],
+      "education": ["Master's", "Ph.D."],
+      "salary_range": "$60,000 - $120,000",
+      "growth": "Growing Demand",
+      "learning_resources": [
+        "https://www.psychologytoday.com/",
+        "https://www.verywellmind.com/"
+      ]
+    }
+  ]
+  

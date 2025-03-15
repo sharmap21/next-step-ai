@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextStepAI - Career Recommender</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    {% comment %} <link rel='stylesheet' href='{% static 'career/css/style1.css' %}'/> {% endcomment %}
+    <link rel='stylesheet' href='{% static 'career/css/main-style.css' %}'/>
+    {% comment %} <link rel='stylesheet' href='{% static 'career/css/style1.css' %}'/> {% endcomment %}
+</head>
+<body>
+  <div class="main-container">
+  <header class='header-section' >
+    <nav class='nav-bar'>
+        <h1 class='nextstepai'>Next Step AI</h1>
+        <h1 class='welcome'>WELCOME</h1>
+        <h5>Your Personalized Career Guide</h5>
+    </nav>
+    </header>
+    <p class='about'>Discover Your Perfect Career Path with AI-Powered Insights!
+      NextStepAI is your ultimate career recommendation platform, 
+      designed to help you navigate your future with confidence. Whether 
+      you're a student exploring career options, a professional looking to 
+      switch fields, or someone eager to upskill, NextStepAI provides personalized 
+      suggestions based on your skills, interests, and education level.</p>
+    <div class='navigate'>
+   <a class="start-link" href='{% url 'recommend_career' %}'>Get Started</a>
+    </div>
+  </div>
+
+</body>
+</html>
